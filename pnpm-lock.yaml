@@ -9,8 +9,8 @@ dependencies:
     specifier: ^1.10.0
     version: 1.10.1
   '@actions/github':
-    specifier: ^5.1.1
-    version: 5.1.1
+    specifier: ^6.0.0
+    version: 6.0.0
   '@anthropic-ai/tokenizer':
     specifier: ^0.0.4
     version: 0.0.4
@@ -109,15 +109,13 @@ packages:
       uuid: 8.3.2
     dev: false
 
-  /@actions/github@5.1.1:
-    resolution: {integrity: sha512-Nk59rMDoJaV+mHCOJPXuvB1zIbomlKS0dmSIqPGxd0enAXBnOfn4VWF+CGtRCwXZG9Epa54tZA7VIRlJDS8A6g==}
+  /@actions/github@6.0.0:
+    resolution: {integrity: sha512-alScpSVnYmjNEXboZjarjukQEzgCRmjMv6Xj47fsdnqGS73bjJNDpiiXmp8jr0UZLdUB6d9jW63IcmddUP+l0g==}
     dependencies:
       '@actions/http-client': 2.2.1
-      '@octokit/core': 3.6.0
-      '@octokit/plugin-paginate-rest': 2.21.3(@octokit/core@3.6.0)
-      '@octokit/plugin-rest-endpoint-methods': 5.16.2(@octokit/core@3.6.0)
-    transitivePeerDependencies:
-      - encoding
+      '@octokit/core': 5.2.0
+      '@octokit/plugin-paginate-rest': 9.2.1(@octokit/core@5.2.0)
+      '@octokit/plugin-rest-endpoint-methods': 10.4.1(@octokit/core@5.2.0)
     dev: false
 
   /@actions/http-client@2.2.1:
@@ -1407,12 +1405,6 @@ packages:
       '@octokit/types': 13.4.0
     dev: false
 
-  /@octokit/auth-token@2.5.0:
-    resolution: {integrity: sha512-r5FVUJCOLl19AxiuZD2VRZ/ORjp/4IN98Of6YJoJOkY75CIBuYfmiNHGrDwXr+aLGG55igl9QrxX3hbiXlLb+g==}
-    dependencies:
-      '@octokit/types': 6.41.0
-    dev: false
-
   /@octokit/auth-token@3.0.4:
     resolution: {integrity: sha512-TWFX7cZF2LXoCvdmJWY7XVPi74aSY0+FfBZNSXEXFkMpjcqsQwDSYVv5FhRFaI0V1ECnwbz4j59T/G+rXNWaIQ==}
     engines: {node: '>= 14'}
@@ -1421,20 +1413,6 @@ packages:
   /@octokit/auth-token@4.0.0:
     resolution: {integrity: sha512-tY/msAuJo6ARbK6SPIxZrPBms3xPbfwBrulZe0Wtr/DIY9lje2HeV1uoebShn6mx7SjCHif6EjMvoREj+gZ+SA==}
     engines: {node: '>= 18'}
-    dev: false
-
-  /@octokit/core@3.6.0:
-    resolution: {integrity: sha512-7RKRKuA4xTjMhY+eG3jthb3hlZCsOwg3rztWh75Xc+ShDWOfDDATWbeZpAHBNRpm4Tv9WgBMOy1zEJYXG6NJ7Q==}
-    dependencies:
-      '@octokit/auth-token': 2.5.0
-      '@octokit/graphql': 4.8.0
-      '@octokit/request': 5.6.3
-      '@octokit/request-error': 2.1.0
-      '@octokit/types': 6.41.0
-      before-after-hook: 2.2.3
-      universal-user-agent: 6.0.1
-    transitivePeerDependencies:
-      - encoding
     dev: false
 
   /@octokit/core@4.2.4:
@@ -1465,14 +1443,6 @@ packages:
       universal-user-agent: 6.0.1
     dev: false
 
-  /@octokit/endpoint@6.0.12:
-    resolution: {integrity: sha512-lF3puPwkQWGfkMClXb4k/eUT/nZKQfxinRWJrdZaJO85Dqwo/G0yOC434Jr2ojwafWJMYqFGFa5ms4jJUgujdA==}
-    dependencies:
-      '@octokit/types': 6.41.0
-      is-plain-object: 5.0.0
-      universal-user-agent: 6.0.1
-    dev: false
-
   /@octokit/endpoint@7.0.6:
     resolution: {integrity: sha512-5L4fseVRUsDFGR00tMWD/Trdeeihn999rTMGRMC1G/Ldi1uWlWJzI98H4Iak5DB/RVvQuyMYKqSK/R6mbSOQyg==}
     engines: {node: '>= 14'}
@@ -1488,16 +1458,6 @@ packages:
     dependencies:
       '@octokit/types': 13.4.0
       universal-user-agent: 6.0.1
-    dev: false
-
-  /@octokit/graphql@4.8.0:
-    resolution: {integrity: sha512-0gv+qLSBLKF0z8TKaSKTsS39scVKF9dbMxJpj3U0vC7wjNWFuIpL/z76Qe2fiuCbDRcJSavkXsVtMS6/dtQQsg==}
-    dependencies:
-      '@octokit/request': 5.6.3
-      '@octokit/types': 6.41.0
-      universal-user-agent: 6.0.1
-    transitivePeerDependencies:
-      - encoding
     dev: false
 
   /@octokit/graphql@5.0.6:
@@ -1520,10 +1480,6 @@ packages:
       universal-user-agent: 6.0.1
     dev: false
 
-  /@octokit/openapi-types@12.11.0:
-    resolution: {integrity: sha512-VsXyi8peyRq9PqIz/tpqiL2w3w80OgVMwBHltTml3LmVvXiphgeqmY9mvBw9Wu7e0QWk/fqD37ux8yP5uVekyQ==}
-    dev: false
-
   /@octokit/openapi-types@18.1.1:
     resolution: {integrity: sha512-VRaeH8nCDtF5aXWnjPuEMIYf1itK/s3JYyJcWFJT8X9pSNnBtriDf7wlEWsGuhPLl4QIH4xM8fqTXDwJ3Mu6sw==}
     dev: false
@@ -1534,15 +1490,6 @@ packages:
 
   /@octokit/openapi-types@22.0.1:
     resolution: {integrity: sha512-1yN5m1IMNXthoBDUXFF97N1gHop04B3H8ws7wtOr8GgRyDO1gKALjwMHARNBoMBiB/2vEe/vxstrApcJZzQbnQ==}
-    dev: false
-
-  /@octokit/plugin-paginate-rest@2.21.3(@octokit/core@3.6.0):
-    resolution: {integrity: sha512-aCZTEf0y2h3OLbrgKkrfFdjRL6eSOo8komneVQJnYecAxIej7Bafor2xhuDJOIFau4pk0i/P28/XgtbyPF0ZHw==}
-    peerDependencies:
-      '@octokit/core': '>=2'
-    dependencies:
-      '@octokit/core': 3.6.0
-      '@octokit/types': 6.41.0
     dev: false
 
   /@octokit/plugin-paginate-rest@9.2.1(@octokit/core@5.2.0):
@@ -1563,16 +1510,6 @@ packages:
     dependencies:
       '@octokit/core': 5.2.0
       '@octokit/types': 12.6.0
-    dev: false
-
-  /@octokit/plugin-rest-endpoint-methods@5.16.2(@octokit/core@3.6.0):
-    resolution: {integrity: sha512-8QFz29Fg5jDuTPXVtey05BLm7OB+M8fnvE64RNegzX7U+5NUXcOcnpTIK0YfSHBg8gYd0oxIq3IZTe9SfPZiRw==}
-    peerDependencies:
-      '@octokit/core': '>=3'
-    dependencies:
-      '@octokit/core': 3.6.0
-      '@octokit/types': 6.41.0
-      deprecation: 2.3.1
     dev: false
 
   /@octokit/plugin-retry@4.1.6(@octokit/core@4.2.4):
@@ -1597,14 +1534,6 @@ packages:
       bottleneck: 2.19.5
     dev: false
 
-  /@octokit/request-error@2.1.0:
-    resolution: {integrity: sha512-1VIvgXxs9WHSjicsRwq8PlR2LR2x6DwsJAaFgzdi0JfJoGSO8mYI/cHJQ+9FbN21aa+DrgNLnwObmyeSC8Rmpg==}
-    dependencies:
-      '@octokit/types': 6.41.0
-      deprecation: 2.3.1
-      once: 1.4.0
-    dev: false
-
   /@octokit/request-error@3.0.3:
     resolution: {integrity: sha512-crqw3V5Iy2uOU5Np+8M/YexTlT8zxCfI+qu+LxUB7SZpje4Qmx3mub5DfEKSO8Ylyk0aogi6TYdf6kxzh2BguQ==}
     engines: {node: '>= 14'}
@@ -1621,19 +1550,6 @@ packages:
       '@octokit/types': 13.4.0
       deprecation: 2.3.1
       once: 1.4.0
-    dev: false
-
-  /@octokit/request@5.6.3:
-    resolution: {integrity: sha512-bFJl0I1KVc9jYTe9tdGGpAMPy32dLBXXo1dS/YwSCTL/2nd9XeHsY616RE3HPXDVk+a+dBuzyz5YdlXwcDTr2A==}
-    dependencies:
-      '@octokit/endpoint': 6.0.12
-      '@octokit/request-error': 2.1.0
-      '@octokit/types': 6.41.0
-      is-plain-object: 5.0.0
-      node-fetch: 2.7.0
-      universal-user-agent: 6.0.1
-    transitivePeerDependencies:
-      - encoding
     dev: false
 
   /@octokit/request@6.2.8:
@@ -1670,12 +1586,6 @@ packages:
     resolution: {integrity: sha512-WlMegy3lPXYWASe3k9Jslc5a0anrYAYMWtsFrxBTdQjS70hvLH6C+PGvHbOsgy3RA3LouGJoU/vAt4KarecQLQ==}
     dependencies:
       '@octokit/openapi-types': 22.0.1
-    dev: false
-
-  /@octokit/types@6.41.0:
-    resolution: {integrity: sha512-eJ2jbzjdijiL3B4PrSQaSjuF2sPEQPVCPzBvTHJD9Nz+9dw2SGH4K4xeQJ77YfTq5bRQ+bD8wT11JbeDPmxmGg==}
-    dependencies:
-      '@octokit/openapi-types': 12.11.0
     dev: false
 
   /@octokit/types@9.3.2:
